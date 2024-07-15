@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            div{
+                background-color: skyblue;
+                padding-left: 10;
+                padding-right: 10;
+                padding-top: 10;
+                padding-bottom: 10;
+            }
+            footer{
+                background-color: green;
+                padding:20px;
+            }
+            nav ul li{
+                padding: 5px;display: inline;
+            }
+        </style>
+    </head>
+    <body><div>
+        <center><h1>Registration Form</h1></center>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="RegistrationHome.html">Sign in</a></li>
+                <li><a href="Login.html">Login Page</a></li>
+            </ul></nav>
+        <center><form action="Login.html">
+            <table>
+            <tr>
+           <th><label for="Username">Username:</label></th>
+           <th><input type="text" name="uname" autofocus><br></th></tr>
+           <tr><td><label for="password">Password:</label></td>
+            <td><input type="password" name="pwd"><br></td></tr>
+            <tr><td>Enter Date of Birth:</td><td><input type="date" name="bname"></td>
+            <tr><td>Enter your mail:</td><td><input type="email" name="ename"></td></tr>
+            <tr><th><label for="gender">Gender:</label><br></th>
+            <th><input type="radio" name="gender" value="Male">Male<br></th>
+            <th><input type="radio" name="gender" value="Female">Female<br></th></tr>
+            </table>
+            Enter your Branch:<select name="Branch">
+                <option value="Cse">CSE</option>
+                <option value="Csm">CSE-AI and ML</option>
+                <option value="Ece">ECE</option>
+                <option value="Mech">Mechanical</option>
+                <option value="Civil">Civil</option>
+                <option value="Eee">EEE</option>
+            </select><br>
+            Languages:<br><input type="checkbox" name="Eng">Engilsh<br>
+                      <input type="checkbox" name="Tel">Telugu<br>
+                      <input type="checkbox" name="Hin">Hindi<br>
+            Enter Your Mobile no:<input type="tel" name="personal" id="per" pattern="[0-9]{10}" title="Enter 10 digit number"><br> 
+            <textarea width="50" height="50">Enter Text</textarea><br>
+            <center><input type="submit"></center>
+        </form></center></div>
+        <footer>
+            <p>&copy; 2024 My MyCompany. All rights reserved.</p>
+         </footer>
+    </body>
+</html>
